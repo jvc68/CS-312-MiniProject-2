@@ -1,0 +1,53 @@
+body {
+	background-color: cornflowerblue;
+	margin: 12px;
+	padding-bottom: 40px;
+}
+
+input {
+	margin-bottom: 5px;
+}
+
+button {
+	border-radius: 5px;
+	padding: 5px;
+	color: white;
+	font-weight: bold;
+	background-color: lightcoral;
+	margin-top: 5px;
+}
+
+h2 {
+	text-decoration: underline;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 2px dotted cornflowerblue;
+	margin: 1em 0;
+	padding: 0;
+}
+
+.title {
+	text-align: center;
+}
+
+.submitArea {
+	background-color: lightblue;
+	border-radius: 5px;
+	margin: 2px;
+	padding-left: 10px;
+	padding-bottom: 12px;
+}
+
+.joke {
+	color: white;
+	background-color: lightcoral;
+	border-radius: 5px;
+	margin: 2px;
+	padding: 10px;
+	margin-top: 20px;
+
+}
