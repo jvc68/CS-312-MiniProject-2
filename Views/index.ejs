@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Random Joke!</title>
+		<link rel="stylesheet" href="/styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+		<h1 class="title">Random Joke!</h1>
+		<div class="submitArea">
+			<form action="/getUV" method="POST">
+				<h2>Generate Your Joke!</h2>
+				<p>Choose a field to remove those types of jokes</p>
+				<input type="checkbox" name="nsfw" value="nsfw">
+				<label for="nsfw">Nsfw</label>
+				<br>
+				<input type="checkbox" name="religious" value="religious">
+				<label for="religious">Religious</label>
+				<br>
+
+				<input type="checkbox" name="political" value="political">
+				<label for="political">Political</label>
+				<br>
+
+				<input type="checkbox" name="racist" value="racist">
+				<label for="racist">Racist</label>
+				<br>
+
+				<input type="checkbox" name="sexist" value="sexist">
+				<label for="sexist">Sexist</label>
+				<br>
+
+				<input type="checkbox" name="explicit" value="explicit">
+				<label for="explicit">Explicit</label>
+				<br>
+
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+
+		<div class="joke">
+			<% if(joke.setUp == "" && joke.setUp != undefined){ %>
+				<p>Generate Your Joke...</p>
+			<% } else{ %>  
+				<p><%= joke.setUp %></p>
+				<hr>
+				<p><%= joke.delivery %></p>
+			<% } %>
+		</div>
+
+	</body>
+
+</html>
